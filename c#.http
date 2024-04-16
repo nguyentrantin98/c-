@@ -1,0 +1,6 @@
+@c__HostAddress = http://localhost:5278
+
+GET {{c__HostAddress}}
+Accept: application/json
+
+###
