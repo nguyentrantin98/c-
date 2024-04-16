@@ -32,6 +32,7 @@ namespace c_.Controller
                 listUpdate.Add($" {item.Name} = '{entity.GetPropValue(item.Name)}'");
             }
             sql += string.Join(",", listUpdate);
+            sql += $" where Id = {entity.GetPropValue("Id")}";
             return await ExeNonQuery(sql);
         }
 
